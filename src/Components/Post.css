@@ -1,0 +1,33 @@
+.post {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: lightblue;
+    border-radius: 0.5rem;
+    width: 30%;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+    margin: 2rem;
+    padding: 1rem;
+}
+
+.post img {
+    border: 4px solid blue;
+    border-radius: 1rem;
+    width: 90%;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+}
+
+.post h3 {
+    margin: 0.8rem;
+}
+
+.post button {
+    background-color: blue;
+    color: lightblue;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    margin: 0;
+}

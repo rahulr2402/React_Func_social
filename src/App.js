@@ -1,23 +1,34 @@
-import logo from './logo.svg';
 import './App.css';
+import Post from './Components/Post';
+import Header from './Components/Header';
 
 function App() {
+    const posts = [
+      {
+        img_url : "./image/flower.jpeg",
+        caption : "Flower"
+      },
+      {
+        img_url : "/image/cat.jpeg",
+        caption : "Cat"
+      },
+      {
+        img_url : "/image/books.jpeg",
+        caption : "Books"
+      },
+      {
+        img_url : "/image/sky.jpeg",
+        caption : "Sky"
+      }
+    ]
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="ZaceBookApp">
+      <Header/>
+      {
+        posts.map((record,index) => {
+          return <Post key={index} img_url={record.img_url} caption={record.caption} />
+        })
+      }
     </div>
   );
 }
