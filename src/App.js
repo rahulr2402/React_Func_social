@@ -5,19 +5,19 @@ import Header from './Components/Header';
 function App() {
     const posts = [
       {
-        img_url : "./image/flower.jpeg",
+        img_url : "image/flower.jpeg",
         caption : "Flower"
       },
       {
-        img_url : "/image/cat.jpeg",
+        img_url : "image/cat.jpeg",
         caption : "Cat"
       },
       {
-        img_url : "/image/books.jpeg",
+        img_url : "image/books.jpeg",
         caption : "Books"
       },
       {
-        img_url : "/image/sky.jpeg",
+        img_url : "image/sky.jpeg",
         caption : "Sky"
       }
     ]
